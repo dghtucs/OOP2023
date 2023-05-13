@@ -14,6 +14,21 @@ using std::sqrt; using std::endl;
 	//otherwise get roots and return
 	// root1 = (-b + sqrt(radical)) divided by 2a
 	// root2 = (-b - sqrt(radical)) divided by 2a
+std::pair<bool,std::pair<double,double>> quadratic(double a,double b,double c)
+{
+	double radical = pow(b,2)-4*a*c;
+	if(radical < 0)
+	{
+		return std::make_pair(false,std::make_pair(-1,-1));
+	}
+	else{
+		double root1 = ((-1)*b+std::sqrt(radical)) / (2*a);
+		double root2 = ((-1)*b-std::sqrt(radical)) / (2*a);
+		return std::make_pair(true,std::make_pair(root1,root2));
+	}
+
+
+}
 
 int main() {
 	//get 3 doubles (ax^2 + bx + c)
@@ -25,9 +40,17 @@ int main() {
 	cin >> a >> b >> c;
 
 	//some call to quadratic function!
-
+	auto res = quadratic(a,b,c);
 	//get roots if they exist
-
+	if(res.first)
+	{
+		cout << res.second.first << endl;
+		cout << res.second.second << endl;
+	}
+	else
+	{
+		cout << "No answer!" << endl;
+	}
 	//print accordingly
 	return 0;
 }
