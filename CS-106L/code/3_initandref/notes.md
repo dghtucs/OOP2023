@@ -3,9 +3,8 @@ Initialization
 - References
 - If time: Const 
 
-==Initialization==: How we
-provide initial
-values to variables
+# Initialization: 
+How we provide initial values to variables
 
 
 
