@@ -50,11 +50,21 @@ vector<int> origin{1,2,3};
     vector<int> &ref = origin;
     origin.push_back(9);
 ```
+# l-values vs r-values
+l-values can appear on the left of =
+r-values can ONLY appear on the right of =
+r-values can't be referenced
 
+```
+int& thisWontWork = 5; // This doesn't work!
+```
 
-
-
-
+# Const and Const References
+```
+const std::vector<int> c_vec{7, 8}; // a const variable
+// BAD - can't declare non-const ref to const vector
+std::vector<int>& bad_ref = c_vec;
+```
 
 
 
