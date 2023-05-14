@@ -1,3 +1,5 @@
+//the first problem of cs106l
+
 #include <string>
 #include <iostream>
 #include <cmath> //gives us pow and sqrt!
