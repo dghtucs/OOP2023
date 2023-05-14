@@ -44,6 +44,32 @@ An alias
 named variable
 
 ## References to variables
+```
+vector<int> origin{1,2,3};
+    vector<int> equal = origin;
+    vector<int> &ref = origin;
+    origin.push_back(9);
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
