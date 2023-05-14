@@ -14,6 +14,7 @@ using std::sqrt; using std::endl;
 	//otherwise get roots and return
 	// root1 = (-b + sqrt(radical)) divided by 2a
 	// root2 = (-b - sqrt(radical)) divided by 2a
+	//学会如何编写结构化代码
 std::pair<bool,std::pair<double,double>> quadratic(double a,double b,double c)
 {
 	double radical = pow(b,2)-4*a*c;
@@ -59,3 +60,4 @@ int main() {
 
 // To run: first compile code --> make quadratic, 
 // then run the compiled code --> ./quadratic
+
