@@ -50,6 +50,26 @@ int main() {
     maxcolor = N;  // initialize the max color number to N
     dfs(1, 0);
     cout << maxcolor << endl;
+
+    if(color[N] > maxcolor)
+    {
+        for(int i = 1; i <= maxcolor; ++i) {  // traverse color
+        bool flag = true;
+        for(int j = 0; j < graph[N].size(); ++j) {
+            if(color[graph[N][j]] == i) {  // if there is a conflict, then this color cannot be used
+                flag = false;
+                break;
+            }
+        }
+        if(flag) {  // if this color can be used
+            color[N] = i;
+            
+            
+        }
+    }
+    }
+
+
     for(int i = 1; i <= N; ++i) {
         cout << color[i] << ' ';
     }

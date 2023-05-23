@@ -29,7 +29,7 @@ void dfs(int x, int curcolor) {
         if(flag) {  // if this color can be used
             color[x] = i;
             dfs(x + 1, curcolor);
-            
+            return;
         }
     }
     color[x] = curcolor + 1;  // assign a new color
@@ -54,4 +54,5 @@ int main() {
         cout << color[i] << ' ';
     }
     return 0;
+    
 }
