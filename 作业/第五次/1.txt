@@ -1,2 +1,7 @@
 C
 D
+ADE
+ACE
+ABCD
+ADE
+
