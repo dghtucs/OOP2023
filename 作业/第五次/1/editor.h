@@ -9,7 +9,7 @@ private:
     using Position = std::pair<int, int>;
     std::vector<std::string> data; // 数据区，亦可采用其他数据结构
     std::vector<std::string> clipboard; // 剪贴板，亦可采用其他数据结构
-    Position p;
+    Position p;Position selectBeg,selectEnd;
     bool isSelect;
 public:
     TextEditor();
@@ -36,7 +36,9 @@ void TextEditor::moveCursor(Position dest)
 }
 void TextEditor::select(Position beg, Position end)
 {
-
+    this->selectBeg = beg;
+    this->selectEnd = end;
+    this->isSelect = true;
 }
 
 
