@@ -1,0 +1,25 @@
+#pragma once
+
+class MultiDimArray
+{
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
