@@ -14,5 +14,6 @@ int main() {
     cin >> i;
     int two = 2*i;
     cout << two << endl;
+    //bianyishi
     return 0;
 }
