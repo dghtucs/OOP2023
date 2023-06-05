@@ -1,4 +1,6 @@
 #pragma once
+#include<string>
+#include<vector>
 #include"Cow.h"
 
 class Farm
@@ -6,17 +8,19 @@ class Farm
 private:
     /* data */
     int n_;
-    Cow* p;
+    std::vector<Cow> cows;
+    
 public:
     Farm(int n);
     ~Farm();
     void addCow(Cow c);
+    void supply(std::string s,double a);
 };
 
 Farm::Farm(int n)
 {
     n_ = n;
-    p = new Cow[n];
+    cows.reserve(n_);
 }
 
 Farm::~Farm()

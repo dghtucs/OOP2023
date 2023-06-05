@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "Cow.h"
-#include "Farm.h"
+#include"Cow.h"
+#include"Farm.h"
 using namespace std;
 
 int main(){
