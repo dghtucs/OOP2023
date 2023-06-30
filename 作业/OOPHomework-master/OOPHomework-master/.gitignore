@@ -1,0 +1,6 @@
+.vscode/
+
+*/main
+*/*.zip
+*/*.o
+*/main.dSYM/
