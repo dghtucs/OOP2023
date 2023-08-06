@@ -1,6 +1,8 @@
 #ifndef COW_H
 #define COW_H
-#include<iostream>
+
+#include<string>
+using namespace std;
 
 class Cow
 {
@@ -9,21 +11,16 @@ private:
     
 
 public:
-    std::string name;
-    double l,u,m;
-    double feed;
-    double milkEveryday;
-    double remain;
+    string c_name;
+    double c_low,c_upper,c_dailyMilk;
+    double c_totalfeed;
+    double milkPerdayPercow;
+    double c_milkProduction;
 
-    Cow::Cow(std::string n,double l,double u,double m);
+    Cow(string n,double l,double u,double m);
     ~Cow();
 };
 
-
-
-Cow::~Cow()
-{
-}
 
 
 

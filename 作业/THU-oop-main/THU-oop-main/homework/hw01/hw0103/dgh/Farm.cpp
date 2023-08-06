@@ -20,6 +20,30 @@ void Farm::supply(std::string name,double a)
 
 void Farm::produceMilk()
 {
+    for(auto c:CowArr)
+    {
+
+    }
+}
+
+double Farm::getMilkProduction()
+{
+    double milkToday = 0;
+    for(auto c : CowArr)
+    {
+        milkToday += c.milkEveryday;
+        c.milkEveryday = 0;
+    }
+    for(auto c : CowArr)
+    {
+        c.feed = 0;
+    }
+    return milkToday;
+}
+
+
+void Farm::startMeal()
+{
     for(auto c : CowArr)
     {
         c.feed = c.feed + c.remain;
@@ -33,22 +57,9 @@ void Farm::produceMilk()
         {
             c.milkEveryday = c.m;
             c.remain = c.feed - c.u;
+
         }
     }
 }
-
-double Farm::getMilkProduction()
-{
-    double milkToday = 0;
-    for(auto c : CowArr)
-    {
-        milkToday += c.milkEveryday;
-        c.milkEveryday = 0;
-    }
-    return milkToday;
-}
-
-
-
 
 

@@ -17,13 +17,10 @@ public:
     void supply(std::string name,double a);
     void produceMilk();
     double getMilkProduction();
+    void startMeal();
 };
 
 
-
-Farm::~Farm()
-{
-}
 
 
 
