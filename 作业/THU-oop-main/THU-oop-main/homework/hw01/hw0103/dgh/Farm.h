@@ -16,6 +16,7 @@ public:
     void addCow(Cow c);
     void supply(std::string name,double a);
     void produceMilk();
+    double getMilkProduction();
 };
 
 

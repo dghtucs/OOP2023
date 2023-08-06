@@ -8,6 +8,7 @@ Farm::Farm(int n) : c_totalProduction(0) {
         cowsArray.reserve(n);
         supplyArray.reserve(n);
 }
+
 void Farm::addCow(Cow cow) {
     cowsArray.push_back(cow);
     supplyArray.push_back(0);

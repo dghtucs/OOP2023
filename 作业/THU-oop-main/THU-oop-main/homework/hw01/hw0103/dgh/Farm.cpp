@@ -22,6 +22,7 @@ void Farm::produceMilk()
 {
     for(auto c : CowArr)
     {
+        c.feed = c.feed + c.remain;
         if(c.feed == 0)
             c.milkEveryday = 0;
         else if(c.feed >= c.l && c.feed <= c.u)
@@ -36,7 +37,16 @@ void Farm::produceMilk()
     }
 }
 
-
+double Farm::getMilkProduction()
+{
+    double milkToday = 0;
+    for(auto c : CowArr)
+    {
+        milkToday += c.milkEveryday;
+        c.milkEveryday = 0;
+    }
+    return milkToday;
+}
 
 
 
