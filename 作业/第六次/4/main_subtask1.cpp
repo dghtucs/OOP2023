@@ -31,7 +31,7 @@ int main()
     while (n--)
     {
         Point p;
-        cin >> p;
+        cin >> pv
         v.push_back(p);
     }
 
