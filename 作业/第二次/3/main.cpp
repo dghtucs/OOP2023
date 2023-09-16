@@ -1,11 +1,12 @@
 #include "Matrix.h"
 #include <iostream>
 #include <string>
-
+#include<fstream>
 using namespace std;
 
 int main()
 {
+	ifstream cin("in.txt");
 	int matNum;
 	cin >> matNum;
 	Matrix* matrices = new Matrix[matNum];
